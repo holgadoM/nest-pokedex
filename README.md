@@ -20,7 +20,16 @@ npm i -g @nestjs/cli
 docker-compose up -d
 ```
 
-5. Cargas datos en DB
+5. Renombrar el archivo __.env.example__ a ```.env```
+
+7. Llenar las variables de entorno definidas en el __.env__
+
+8. Ejecutar la aplicacion en dev con:
+```
+yarn start:dev
+```
+
+9. Cargas datos en DB
 ```
 localhost:3000/api/v2/seed
 ```
