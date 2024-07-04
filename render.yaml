@@ -1,0 +1,24 @@
+# Exported from Render on 2024-07-04T17:13:56Z
+services:
+- type: web
+  name: poke-back
+  runtime: node
+  repo: https://github.com/holgadoM/nest-pokedex
+  plan: free
+  envVars:
+  - key: .env
+    sync: false
+  - key: NODE_VERSION
+    sync: false
+  - key: STRING_CONEXION_MONGO
+    sync: false
+  - key: PORT
+    sync: false
+  - key: NODE_ENV
+    sync: false
+  - key: DEFAULT_LIMIT
+    sync: false
+  region: oregon
+  buildCommand: yarn; yarn build
+  startCommand: yarn start:prod
+version: "1"
